@@ -1,0 +1,97 @@
+:root {
+  --primary: #008060;
+  --dark: #0f172a;
+  --light: #f1f5f9;
+  --card: rgba(255,255,255,0.8);
+}
+
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: #00ffcc;
+}
+
+.sidebar a {
+  display: block;
+  color: #ccc;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.sidebar a:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* Main */
+.main {
+  margin-left: 260px;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background: var(--card);
+  color: black;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Charts */
+.chart-container {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Button */
+.btn {
+  background: var(--primary);
+  padding: 10px;
+  border: none;
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}

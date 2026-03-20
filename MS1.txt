@@ -1,0 +1,194 @@
+# Shopify Data Analyzer Dashboard 📊
+
+A comprehensive web dashboard for analyzing Shopify store data with advanced analytics, AI-powered insights, and intelligent recommendations.
+
+## 🚀 Features
+
+### Core Functionality
+- **📁 Data Input**: Upload CSV files or connect Shopify stores (API integration coming soon)
+- **📈 Advanced Analytics**: Comprehensive dashboards with multiple visualization types
+- **🤖 Smart Insights**: AI-powered recommendations and trend detection
+- **🎯 ROAS Analysis**: Detailed campaign and platform performance tracking
+- **👥 Customer Analytics**: Customer segmentation, retention analysis, and LTV tracking
+- **📦 Product Performance**: Top-performing products and SKU analysis
+- **💵 Revenue Analytics**: Daily/monthly trends with spike detection
+- **❌ Cancellation Analysis**: Return and cancellation rate tracking
+- **🔍 Advanced Filtering**: Date range, product, category, and platform filters
+
+### Dashboard Sections
+
+1. **KPI Cards**: Total Revenue, Orders, Customers, AOV, ROAS, Cancellation Rate
+2. **Revenue Analytics**: Daily trends with spike detection, monthly breakdown
+3. **ROAS Analysis**: Platform and campaign-wise ROAS tracking
+4. **Customer Analytics**: New vs returning customers, LTV distribution
+5. **Product Performance**: Top products by revenue and quantity
+6. **Paid vs Organic**: Revenue breakdown by marketing channel
+7. **Cancellation Analysis**: Order status distribution and regional analysis
+8. **Smart Insights Panel**: AI-powered actionable recommendations
+
+## 🛠️ Technology Stack
+
+- **Frontend**: Streamlit
+- **Backend**: Python
+- **Data Processing**: Pandas, NumPy
+- **Visualization**: Plotly, Plotly Express
+- **Machine Learning**: Scikit-learn (for trend detection)
+- **Styling**: Custom CSS with modern gradients
+
+## 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd shopify_pb
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the application**
+   ```bash
+   streamlit run app.py
+   ```
+
+The application will open in your browser at `http://localhost:8501`
+
+## 📋 Required CSV Format
+
+Your Shopify export CSV should include the following columns:
+
+| Column | Description | Format |
+|--------|-------------|--------|
+| Order ID | Unique order identifier | String |
+| Date | Order date | YYYY-MM-DD |
+| Customer ID | Unique customer identifier | String |
+| Product | Product name | String |
+| Category | Product category | String |
+| Quantity | Order quantity | Integer |
+| Price | Unit price | Decimal |
+| Total Revenue | Total order value | Decimal |
+| Platform | Sales platform | String (Facebook, Google, Instagram, Organic, Email) |
+| Campaign | Marketing campaign name | String |
+| Ad Spend | Advertising spend | Decimal |
+| Is Returning Customer | Customer type | Boolean |
+| Order Status | Order status | String (Delivered, Cancelled, Returned) |
+| Region | Geographic region | String |
+| Payment Method | Payment method | String |
+
+## 🎯 Usage
+
+### Getting Started
+
+1. **Home Page**: Choose from three options:
+   - **Upload Data**: Upload your Shopify CSV export
+   - **Connect Store**: Direct Shopify integration (coming soon)
+   - **Try Demo**: Load sample data for immediate exploration
+
+2. **Data Input Page**:
+   - Upload your CSV file
+   - Review data preview and summary
+   - Proceed to dashboard
+
+3. **Dashboard Page**:
+   - View comprehensive analytics
+   - Apply filters to focus on specific segments
+   - Explore different sections using the navigation
+   - Get AI-powered insights and recommendations
+
+### Key Features
+
+#### Smart Insights Panel
+The AI-powered insights panel provides:
+- 📈 Sales growth/decline notifications
+- 🏆 Top performing product highlights
+- 📈 Trending product identification
+- 🎯 Best performing platform recommendations
+- 💰 ROAS optimization suggestions
+- 👥 Customer retention analysis
+
+#### Advanced Filtering
+- **Date Range**: Select specific time periods
+- **Products**: Filter by specific products
+- **Categories**: Filter by product categories
+- **Platforms**: Filter by marketing platforms
+
+#### Spike Detection
+The revenue analytics automatically detects unusual spikes in sales data and highlights them for investigation.
+
+## 🎨 Design Features
+
+- **Modern UI**: Clean, professional interface with gradient styling
+- **Responsive Design**: Works on desktop and mobile devices
+- **Interactive Charts**: Hover effects, zoom, and detailed tooltips
+- **Color-coded Metrics**: Visual indicators for performance trends
+- **Smooth Transitions**: Modern animations and hover effects
+
+## 🔧 Configuration
+
+### Customization Options
+
+You can customize the dashboard by modifying:
+- **Color Scheme**: Update CSS variables in the app.py file
+- **KPI Metrics**: Add/remove metrics in the `calculate_kpis()` function
+- **Insights Logic**: Modify the `generate_insights()` function
+- **Chart Types**: Change visualization types in each section
+
+### Adding New Features
+
+The modular structure makes it easy to add:
+- New chart types
+- Additional metrics
+- Custom filters
+- New insight categories
+
+## 📊 Sample Data
+
+The application includes a comprehensive sample dataset with:
+- 12 months of realistic e-commerce data
+- Multiple products and categories
+- Various marketing platforms and campaigns
+- Customer behavior patterns
+- Regional variations
+
+## 🚀 Future Enhancements
+
+- **Shopify API Integration**: Direct store connection
+- **Real-time Data**: Live data synchronization
+- **Advanced ML**: Predictive analytics and forecasting
+- **Export Features**: PDF/Excel report generation
+- **Multi-store Support**: Analyze multiple stores simultaneously
+- **Custom Dashboards**: User-configurable dashboard layouts
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+1. **CSV Upload Errors**:
+   - Ensure all required columns are present
+   - Check date format (YYYY-MM-DD)
+   - Verify column names match exactly
+
+2. **Performance Issues**:
+   - Large datasets (>100k rows) may take longer to process
+   - Consider filtering by date range for better performance
+
+3. **Visualization Issues**:
+   - Refresh the page if charts don't load properly
+   - Check browser console for JavaScript errors
+
+## 📞 Support
+
+For issues and feature requests:
+1. Check the troubleshooting section above
+2. Review the CSV format requirements
+3. Test with the demo data first
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+**Built with ❤️ using Streamlit and Python**
