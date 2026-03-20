@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>📊 Analyzer</h2>
+  <a href="#">Dashboard</a>
+  <a href="#">Analytics</a>
+  <a href="#">Products</a>
+  <a href="#">Customers</a>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+  <h1>Marketing Dashboard</h1>
+
+  <!-- KPI Cards -->
+  <div class="grid">
+    <div class="card">Revenue: ₹<span id="rev"></span></div>
+    <div class="card">ROAS: <span id="roas"></span></div>
+    <div class="card">Orders: <span id="orders"></span></div>
+    <div class="card">Customers: <span id="customers"></span></div>
+  </div>
+
+  <!-- Line Chart -->
+  <div class="chart-container">
+    <h3>Revenue Trend (Line Chart)</h3>
+    <canvas id="lineChart"></canvas>
+  </div>
+
+  <!-- Bar Chart -->
+  <div class="chart-container">
+    <h3>Platform ROAS (Bar Chart)</h3>
+    <canvas id="barChart"></canvas>
+  </div>
+
+  <!-- Histogram Style -->
+  <div class="chart-container">
+    <h3>Order Distribution (Histogram)</h3>
+    <canvas id="histChart"></canvas>
+  </div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
